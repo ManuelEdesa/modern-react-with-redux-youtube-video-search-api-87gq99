@@ -13,7 +13,7 @@ class BarraBusqueda extends React.Component {
 
   render() {
     return (
-      <div className="ui segment">
+      <div class="w3-container w3-red">
         <form className="ui form" onSubmit={this.onFormSubmit} >
           <div className="field">
             <label>Busqueda de videos</label>
