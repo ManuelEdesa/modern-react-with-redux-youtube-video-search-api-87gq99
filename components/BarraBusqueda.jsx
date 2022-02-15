@@ -16,7 +16,12 @@ class BarraBusqueda extends React.Component {
       <div className="ui segment">
         <form className="ui form" onSubmit={this.onFormSubmit} >
           <div className="field">
-            <label>Video Search</label>
+            <label>Busqueda de videos</label>
+            <img
+              className="logo-image"
+              alt="Girl in a jacket" width="300" height="100"
+              src="https://i.blogs.es/15ccbe/baja-youtube/1366_521.jpg"
+            />
             <input type="text" value={this.state.term} onChange={e => this.setState({ term: e.target.value })} />
           </div>
         </form>

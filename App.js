@@ -2,7 +2,7 @@
 import React from 'react';
 import youtube from "./components/youtube";
 import BarraBusqueda from "./components/BarraBusqueda";
-import VideoList from "./components/VideoList";
+import ListaVideos from "./components/ListaVideos";
 import VideoInformacion from "./components/VideoInformacion";
 
 class App extends React.Component {
@@ -31,7 +31,7 @@ class App extends React.Component {
               {selectedVideo && <VideoInformacion video={selectedVideo} />}
             </div>
             <div className="five wide column" >
-              <VideoList videos={videos} onVideoSelect={this.onSelectVideo} />
+              <ListaVideos videos={videos} onVideoSelect={this.onSelectVideo} />
             </div>
           </div>
         </div>
